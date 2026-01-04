@@ -14,7 +14,10 @@ const Hero = () => {
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-coral-light/30 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-lavender-light/30 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
+        <div
+          className="absolute bottom-1/4 -right-20 w-96 h-96 bg-lavender-light/30 rounded-full blur-3xl animate-float"
+          style={{ animationDelay: "1s" }}
+        />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-peach-light/20 rounded-full blur-3xl" />
       </div>
 
@@ -22,29 +25,38 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
-            <span className="text-sm font-medium text-muted-foreground">
-              Dental Practice AI Solutions
-            </span>
+            <span className="text-sm font-medium text-muted-foreground">Dental Practice AI Solutions</span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Get More Patients —{" "}
-            <span className="text-gradient">Without More Staff</span>
+          <h1
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Get More Patients <span className="text-gradient">Without More Staff</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            AI that answers calls, books appointments, follows up, and grows your dental practice 24/7.
-            Built exclusively for dental practices that want predictable growth without burnout.
+          <p
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up"
+            style={{ animationDelay: "0.2s" }}
+          >
+            AI that answers calls, books appointments, follows up, and grows your dental practice 24/7. Built
+            exclusively for dental practices that want predictable growth without burnout.
           </p>
 
-          <p className="text-md text-foreground font-medium max-w-xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+          <p
+            className="text-md text-foreground font-medium max-w-xl mx-auto mb-10 animate-fade-in-up"
+            style={{ animationDelay: "0.25s" }}
+          >
             Never miss a call. Never forget a follow-up. Never lose a patient to a faster competitor.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 animate-fade-in-up"
+            style={{ animationDelay: "0.3s" }}
+          >
             <Button
               size="lg"
               onClick={() => scrollToSection("cta")}
@@ -56,7 +68,10 @@ const Hero = () => {
           </div>
 
           {/* Testimonial Quote */}
-          <div className="max-w-2xl mx-auto mb-16 animate-fade-in-up p-6 rounded-xl bg-card/50 border border-border" style={{ animationDelay: "0.35s" }}>
+          <div
+            className="max-w-2xl mx-auto mb-16 animate-fade-in-up p-6 rounded-xl bg-card/50 border border-border"
+            style={{ animationDelay: "0.35s" }}
+          >
             <p className="text-muted-foreground italic mb-2">
               "Our front desk stopped drowning in calls, and our schedule stayed full. The AI paid for itself in weeks."
             </p>
@@ -67,8 +82,11 @@ const Hero = () => {
           <div className="text-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by Modern Dental Practices</p>
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+
+          <div
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto animate-fade-in-up"
+            style={{ animationDelay: "0.45s" }}
+          >
             <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Phone className="w-5 h-5 text-primary" />
