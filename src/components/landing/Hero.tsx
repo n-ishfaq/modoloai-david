@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, MessageCircleHeart, Users } from "lucide-react";
+import { ArrowRight, Phone, Users, Clock, Star } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -22,69 +22,80 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
-            <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              AI-Powered Communication Assistant
+              Dental Practice AI Solutions
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Build{" "}
-            <span className="text-gradient">Meaningful</span>
-            <br />
-            Connections with AI
+            Get More Patients —{" "}
+            <span className="text-gradient">Without More Staff</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Transform your communication with AI that enhances your messages, 
-            understands emotions, and helps you connect more authentically with 
-            the people who matter most.
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            AI that answers calls, books appointments, follows up, and grows your dental practice 24/7.
+            Built exclusively for dental practices that want predictable growth without burnout.
+          </p>
+
+          <p className="text-md text-foreground font-medium max-w-xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+            Never miss a call. Never forget a follow-up. Never lose a patient to a faster competitor.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <Button
               size="lg"
-              onClick={() => scrollToSection("demo")}
+              onClick={() => scrollToSection("cta")}
               className="gradient-primary text-primary-foreground shadow-soft hover:opacity-90 transition-all text-lg px-8 py-6 h-auto"
             >
-              Try Our AI Free
+              Get My Free AI Practice Audit
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollToSection("how-it-works")}
-              className="text-lg px-8 py-6 h-auto border-2"
-            >
-              See How It Works
             </Button>
           </div>
 
+          {/* Testimonial Quote */}
+          <div className="max-w-2xl mx-auto mb-16 animate-fade-in-up p-6 rounded-xl bg-card/50 border border-border" style={{ animationDelay: "0.35s" }}>
+            <p className="text-muted-foreground italic mb-2">
+              "Our front desk stopped drowning in calls, and our schedule stayed full. The AI paid for itself in weeks."
+            </p>
+            <p className="text-sm font-medium text-foreground">— Dr. A. Malik, General Dentist</p>
+          </div>
+
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="text-center">
+          <div className="text-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by Modern Dental Practices</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
+            <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <MessageCircleHeart className="w-5 h-5 text-primary" />
-                <span className="text-2xl md:text-3xl font-bold text-foreground">50K+</span>
+                <Phone className="w-5 h-5 text-primary" />
+                <span className="text-2xl md:text-3xl font-bold text-foreground">82%</span>
               </div>
-              <span className="text-sm text-muted-foreground">Messages Enhanced</span>
+              <span className="text-xs text-muted-foreground">Appointment Conversion Rate</span>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Users className="w-5 h-5 text-accent" />
-                <span className="text-2xl md:text-3xl font-bold text-foreground">10K+</span>
+                <span className="text-2xl md:text-3xl font-bold text-foreground">150+</span>
               </div>
-              <span className="text-sm text-muted-foreground">Happy Users</span>
+              <span className="text-xs text-muted-foreground">Dental & Medical Offices</span>
             </div>
-            <div className="text-center">
+            <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Sparkles className="w-5 h-5 text-lavender" />
-                <span className="text-2xl md:text-3xl font-bold text-foreground">98%</span>
+                <Clock className="w-5 h-5 text-lavender" />
+                <span className="text-2xl md:text-3xl font-bold text-foreground">22+</span>
               </div>
-              <span className="text-sm text-muted-foreground">Satisfaction Rate</span>
+              <span className="text-xs text-muted-foreground">Years Healthcare Tech</span>
+            </div>
+            <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <Star className="w-5 h-5 text-coral" />
+                <span className="text-2xl md:text-3xl font-bold text-foreground">4.9★</span>
+              </div>
+              <span className="text-xs text-muted-foreground">Average Client Rating</span>
             </div>
           </div>
         </div>

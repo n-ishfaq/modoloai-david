@@ -1,33 +1,32 @@
-import { Heart, Twitter, Linkedin, Instagram, Github } from "lucide-react";
+import { Twitter, Linkedin, Facebook } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const links = {
-    product: [
-      { label: "Features", href: "#features" },
-      { label: "Demo", href: "#demo" },
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Testimonials", href: "#testimonials" },
+    solutions: [
+      { label: "AI Voice Receptionist", href: "#features" },
+      { label: "Calendar Management", href: "#features" },
+      { label: "Review Management", href: "#features" },
+      { label: "SEO & Advertising", href: "#features" },
     ],
     company: [
       { label: "About Us", href: "#" },
-      { label: "Careers", href: "#" },
-      { label: "Blog", href: "#" },
-      { label: "Contact", href: "#" },
+      { label: "How It Works", href: "#how-it-works" },
+      { label: "Results", href: "#testimonials" },
+      { label: "Contact", href: "#cta" },
     ],
     legal: [
       { label: "Privacy Policy", href: "#" },
       { label: "Terms of Service", href: "#" },
-      { label: "Cookie Policy", href: "#" },
+      { label: "HIPAA Compliance", href: "#" },
     ],
   };
 
   const socialLinks = [
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Github, href: "#", label: "GitHub" },
+    { icon: Facebook, href: "#", label: "Facebook" },
   ];
 
   return (
@@ -37,14 +36,14 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-2 lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-                <Heart className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-2xl font-bold text-card-foreground">Loveable</span>
+              <span className="text-2xl font-bold text-card-foreground">MODO AI</span>
+              <span className="text-sm text-muted-foreground">Technology</span>
             </div>
-            <p className="text-muted-foreground mb-6 max-w-xs">
-              AI-powered platform for building meaningful connections through 
-              enhanced communication and emotional intelligence.
+            <p className="text-muted-foreground mb-2 max-w-xs">
+              Dental Practice AI Solutions
+            </p>
+            <p className="text-sm text-muted-foreground mb-6">
+              Medical Office & Dental Office AI Technology Company
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -60,15 +59,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Product */}
+          {/* Solutions */}
           <div>
-            <h4 className="font-semibold text-card-foreground mb-4">Product</h4>
+            <h4 className="font-semibold text-card-foreground mb-4">Solutions</h4>
             <ul className="space-y-3">
-              {links.product.map((link) => (
+              {links.solutions.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -85,7 +84,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -102,7 +101,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -115,10 +114,10 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Loveable AI Technology. All rights reserved.
+            © {currentYear} MODO AI Technology. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            Made with <Heart className="w-4 h-4 text-primary fill-primary" /> for meaningful connections
+          <p className="text-sm text-muted-foreground">
+            Dental Practice AI Solutions | www.aifordp.com
           </p>
         </div>
       </div>
