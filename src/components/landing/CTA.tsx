@@ -63,7 +63,7 @@ const CTA = () => {
             </h2>
             
             <p className="text-xl font-medium text-primary mb-6">
-              Discover How Many Patients You're Losing Right Now
+              Discover How Many Patients & Clients You're Losing Right Now
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
@@ -130,10 +130,10 @@ const CTA = () => {
           {/* Secondary CTA */}
           <div className="text-center pt-12 border-t border-border">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Grow Your Practice?
+              Ready to Grow Your Medical, Dental or Law Practice?
             </h3>
             <p className="text-muted-foreground mb-8">
-              Every day without AI is another day patients book with a faster competitor.
+              Every day without AI is another day patients and clients book with a faster competitor.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
