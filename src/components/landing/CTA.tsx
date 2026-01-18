@@ -29,7 +29,7 @@ const CTA = () => {
   };
 
   const auditFeatures = [
-    "Full front-desk performance audit",
+    "Front-desk performance audit",
     "Google & online visibility analysis",
     "Appointment conversion review",
     "Custom AI growth plan",
@@ -130,7 +130,7 @@ const CTA = () => {
           {/* Secondary CTA */}
           <div className="text-center pt-12 border-t border-border">
             <h3 className="text-2xl font-bold mb-4">
-              Ready to Grow Your Dental Practice?
+              Ready to Grow Your Practice?
             </h3>
             <p className="text-muted-foreground mb-8">
               Every day without AI is another day patients book with a faster competitor.

@@ -3,31 +3,31 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Dr. Sarah Khan",
-    role: "Cosmetic Dentist",
+    name: "SK",
+    role: "Multi-Specialty Medical & Dental Clinic Owner",
     avatar: "SK",
-    content: "The AI receptionist books more appointments than our old front desk system ever did.",
+    content: "The AI receptionist books more appointments and consultations than our old front desk system ever did.",
     metric: "87% booking rate",
   },
   {
-    name: "Dr. James Lee",
-    role: "Family Dentistry",
+    name: "JL",
+    role: "Regional Healthcare & Legal Services Group",
     avatar: "JL",
-    content: "Our Google reviews exploded and new patients trust us instantly.",
+    content: "Our Google reviews exploded and new patients and clients trust us instantly.",
     metric: "+1.1 star rating in 60 days",
   },
   {
-    name: "Multi-location Dental Group",
-    role: "Enterprise Client",
+    name: "DG",
+    role: "Multi-location Medical, Dental & Law Office Network",
     avatar: "DG",
-    content: "Ad costs dropped while patient quality went up.",
-    metric: "42% lower cost per lead",
+    content: "Ad costs dropped while lead quality went up across all departments.",
+    metric: "42% lower cost per qualified lead",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="py-24 gradient-soft">
+    <section id="testimonials" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -38,7 +38,7 @@ const Testimonials = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Real Results From <span className="text-gradient">Dental Practices</span>
+            Real Results From <span className="text-gradient">Medical, Dental & Law Offices</span>
           </h2>
         </div>
 

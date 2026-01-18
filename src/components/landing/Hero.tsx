@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, Users, Clock, Star } from "lucide-react";
+import { ArrowRight, Building2, Users, Clock, Star } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
-            <span className="text-sm font-medium text-muted-foreground">Dental Practice AI Solutions</span>
+            <span className="text-sm font-medium text-muted-foreground">Medical, Dental & Law Office AI Solutions</span>
           </div>
 
           {/* Main Heading */}
@@ -33,7 +33,7 @@ const Hero = () => {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Get More Patients <span className="text-gradient">Without More Staff</span>
+            Get More Patients & Clients <span className="text-gradient">Without More Staff</span>
           </h1>
 
           {/* Subheading */}
@@ -41,21 +41,27 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            AI that answers calls, books appointments, follows up, and grows your dental practice 24/7. Built
-            exclusively for dental practices that want predictable growth without burnout.
+            AI that answers calls, books appointments, follows up with patients & clients, and supports your marketing & advertising — 24/7.
+          </p>
+
+          <p
+            className="text-md text-muted-foreground max-w-xl mx-auto mb-4 animate-fade-in-up"
+            style={{ animationDelay: "0.25s" }}
+          >
+            Built for medical clinics, dental practices, and law firms that want predictable growth without front-desk burnout.
           </p>
 
           <p
             className="text-md text-foreground font-medium max-w-xl mx-auto mb-10 animate-fade-in-up"
-            style={{ animationDelay: "0.25s" }}
+            style={{ animationDelay: "0.3s" }}
           >
-            Never miss a call. Never forget a follow-up. Never lose a patient to a faster competitor.
+            Never miss a call. Never forget a follow-up. Never lose a patient or client to a faster competitor.
           </p>
 
           {/* CTAs */}
           <div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 animate-fade-in-up"
-            style={{ animationDelay: "0.3s" }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 animate-fade-in-up"
+            style={{ animationDelay: "0.35s" }}
           >
             <Button
               size="lg"
@@ -67,20 +73,9 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Testimonial Quote */}
-          <div
-            className="max-w-2xl mx-auto mb-16 animate-fade-in-up p-6 rounded-xl bg-card/50 border border-border"
-            style={{ animationDelay: "0.35s" }}
-          >
-            <p className="text-muted-foreground italic mb-2">
-              "Our front desk stopped drowning in calls, and our schedule stayed full. The AI paid for itself in weeks."
-            </p>
-            <p className="text-sm font-medium text-foreground">— Dr. A. Malik, General Dentist</p>
-          </div>
-
           {/* Stats */}
           <div className="text-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by Modern Dental Practices</p>
+            <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by Modern Medical, Dental & Law Offices</p>
           </div>
 
           <div
@@ -89,17 +84,17 @@ const Hero = () => {
           >
             <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
-                <Phone className="w-5 h-5 text-primary" />
-                <span className="text-2xl md:text-3xl font-bold text-foreground">82%</span>
+                <Building2 className="w-5 h-5 text-primary" />
+                <span className="text-2xl md:text-3xl font-bold text-foreground">150+</span>
               </div>
-              <span className="text-xs text-muted-foreground">Appointment Conversion Rate</span>
+              <span className="text-xs text-muted-foreground">Medical, Dental & Law Offices</span>
             </div>
             <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Users className="w-5 h-5 text-accent" />
-                <span className="text-2xl md:text-3xl font-bold text-foreground">150+</span>
+                <span className="text-2xl md:text-3xl font-bold text-foreground">1.8M+</span>
               </div>
-              <span className="text-xs text-muted-foreground">Dental & Medical Offices</span>
+              <span className="text-xs text-muted-foreground">Patient Interactions</span>
             </div>
             <div className="text-center p-4 rounded-xl bg-card/50 border border-border">
               <div className="flex items-center justify-center gap-2 mb-2">

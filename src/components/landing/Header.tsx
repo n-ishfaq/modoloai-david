@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <span className="text-xl md:text-2xl font-bold text-foreground">
-              MODO AI
+              MODOLO AI
             </span>
             <span className="hidden sm:inline text-sm text-muted-foreground">
               Technology
@@ -51,7 +51,7 @@ const Header = () => {
               onClick={() => scrollToSection("why-us")}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Why MODO AI
+              Why MODOLO AI
             </button>
           </nav>
 
@@ -104,7 +104,7 @@ const Header = () => {
                 onClick={() => scrollToSection("why-us")}
                 className="text-muted-foreground hover:text-foreground transition-colors text-left py-2"
               >
-                Why MODO AI
+                Why MODOLO AI
               </button>
               <Button
                 onClick={() => scrollToSection("cta")}
