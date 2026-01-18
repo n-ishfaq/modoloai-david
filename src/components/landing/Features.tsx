@@ -74,8 +74,8 @@ const aiStaff = [
     icon: Phone,
     title: "AI Receptionist",
     subtitle: "Handles the full front-desk communication layer",
-    actions: ["Answers Questions", "Provides Information", "Collects Patient Information"],
-    bullets: ["24/7 call answering", "Insurance & service questions", "New patient qualification", "Appointment booking", "After-hours coverage"],
+    actions: ["Answers Questions", "Provides Information", "Collects Patient & Client Information"],
+    bullets: ["24/7 call answering", "Insurance & service questions", "New patient & client qualification", "Appointment booking", "After-hours coverage"],
     color: "text-primary",
     bgColor: "bg-primary/10",
   },
@@ -113,7 +113,7 @@ const Features = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Marketing Services <span className="text-primary">(AI-Supported)</span>
+              Marketing Services
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               We strengthen your existing marketing using AI follow-ups and automation — not replace it.
@@ -146,10 +146,10 @@ const Features = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Advertising Services <span className="text-accent">(AI-Optimized)</span>
+              Advertising Services
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We manage and optimize your paid advertising while AI handles patient responses and follow-ups.
+              We manage and optimize your paid advertising while AI handles patient and client responses and follow-ups.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
