@@ -30,31 +30,40 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in-up"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Get More Patients & Clients <span className="text-gradient">Without More Staff</span>
+            Get More Patients & Clients
           </h1>
+
+          {/* Subtitle */}
+          <p
+            className="text-2xl md:text-3xl font-semibold text-gradient mb-6 animate-fade-in-up"
+            style={{ animationDelay: "0.15s" }}
+          >
+            Operate Your Office More Effectively With Less Staff
+          </p>
 
           {/* Subheading */}
           <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            AI that answers calls, books appointments, follows up with patients & clients, and supports your marketing & advertising — 24/7.
+            Get faster clients with modern marketing powered by AI follow-ups.
           </p>
 
           <p
-            className="text-md text-muted-foreground max-w-xl mx-auto mb-4 animate-fade-in-up"
+            className="text-md text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.25s" }}
           >
-            Built for medical clinics, dental practices, and law firms that want predictable growth without front-desk burnout.
+            We don't just run ads. We make sure every lead is answered, booked, and followed up automatically.
           </p>
 
           <p
-            className="text-md text-foreground font-medium max-w-xl mx-auto mb-10 animate-fade-in-up"
+            className="text-md text-foreground font-medium max-w-2xl mx-auto mb-10 animate-fade-in-up"
             style={{ animationDelay: "0.3s" }}
           >
+            24/7 AI receptionist + appointment booking + lead nurturing system for clinics and law firms.
             Never miss a call. Never forget a follow-up. Never lose a patient or client to a faster competitor.
           </p>
 
