@@ -49,7 +49,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Instant engagement with prospects. We make sure every appointment booking is handled automatically.
+            Instant engagement with prospects.
             Never miss a call. Never forget a follow-up. Never lose a patient or client to a faster competitor.
           </p>
 
