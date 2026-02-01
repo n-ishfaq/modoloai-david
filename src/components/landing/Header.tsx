@@ -19,11 +19,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <img src={modoloLogo} alt="MODOLO AI Logo" className="h-10 w-auto" />
-            <span className="text-xl md:text-2xl font-bold text-foreground">
-              MODOLO.AI
-            </span>
+          <div className="flex items-center">
+            <img src={modoloLogo} alt="MODOLO AI Logo" className="h-12 md:h-14 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
