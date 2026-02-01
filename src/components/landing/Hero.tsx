@@ -26,7 +26,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
             <span className="text-sm font-medium text-muted-foreground">
-              <span className="font-bold">M</span>edical <span className="font-bold">O</span>ffice | <span className="font-bold">D</span>ental <span className="font-bold">O</span>ffice | <span className="font-bold">L</span>aw <span className="font-bold">O</span>ffice | AI
+              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice | AI
             </span>
           </div>
 

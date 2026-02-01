@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import modoloLogo from "@/assets/modolo-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-lg font-bold text-primary-foreground">M</span>
-            </div>
+            <img src={modoloLogo} alt="MODOLO AI Logo" className="h-10 w-auto" />
             <span className="text-xl md:text-2xl font-bold text-foreground">
               MODOLO.AI
             </span>
