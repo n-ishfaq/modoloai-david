@@ -77,7 +77,7 @@ const steps = [
     number: "05",
     icon: Settings,
     title: "Office Process Automation",
-    subtitle: "Operations",
+    subtitle: "Automation",
     description: "AI automates back-office workflows so your team focuses on patients and clients.",
     bullets: [
       "Organizes and structures incoming data",

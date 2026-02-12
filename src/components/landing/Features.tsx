@@ -107,8 +107,8 @@ const Features = () => {
               MODOLO AI Technology Solutions
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            MODOLO AI <span className="text-gradient">Driven Solutions</span>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+            MODOLO AI DRIVEN SOLUTIONS
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-6">
             Demand Generation & AI Automation

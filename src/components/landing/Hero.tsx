@@ -24,15 +24,19 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
-            <span className="text-sm font-medium text-muted-foreground">
-              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice | AI
+          <div className="inline-flex flex-col items-center px-6 py-3 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
+            <span className="text-sm font-medium text-foreground">
+              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice
+            </span>
+            <div className="w-full h-px bg-border my-1.5" />
+            <span className="text-sm font-medium text-foreground">
+              <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice | AI
             </span>
           </div>
 
           {/* Main Heading */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 animate-fade-in-up"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
             Get More Patients & Clients
@@ -40,7 +44,7 @@ const Hero = () => {
 
           {/* Subtitle - same font style as heading */}
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient mb-6 animate-fade-in-up"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in-up"
             style={{ animationDelay: "0.15s" }}
           >
             Operate More Effectively With Less Staff
@@ -77,7 +81,7 @@ const Hero = () => {
 
           {/* Stats */}
           <div className="text-center mb-8 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by Modern Medical, Dental & Law Offices</p>
+            <p className="text-sm font-medium text-muted-foreground mb-6">Trusted by leading medical, dental, and law offices</p>
           </div>
 
           <div

@@ -86,7 +86,6 @@ const CTA = () => {
   ];
 
   const trustBadges = [
-    "No credit card required",
     "Live in days, not months",
     "No long-term contracts",
   ];
