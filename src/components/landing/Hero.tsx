@@ -43,16 +43,21 @@ const Hero = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-gradient mb-6 animate-fade-in-up"
             style={{ animationDelay: "0.15s" }}
           >
-            Operate Your Office More Effectively With Less Staff
+            Operate More Effectively With Less Staff
           </h2>
 
           {/* Subheading */}
           <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Instant engagement with prospects. We make sure every appointment booking is handled automatically.
-            Never miss a call. Never forget a follow-up. Never lose a patient or client to a faster competitor.
+            Every day without AI, competitors book your clients while your team struggles with repetitive tasks that could be automated.
+          </p>
+          <p
+            className="text-lg md:text-xl font-semibold text-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up"
+            style={{ animationDelay: "0.22s" }}
+          >
+            Ready to scale your practice?
           </p>
 
           {/* CTAs */}

@@ -108,10 +108,13 @@ const Features = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            MODOLO AI — <span className="text-gradient">Demand Generation & AI Office Operations</span>
+            MODOLO AI <span className="text-gradient">Driven Solutions</span>
           </h2>
+          <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-6">
+            Demand Generation & AI Automation
+          </h3>
           <p className="text-lg text-muted-foreground">
-            Specialized AI systems for medical clinics, dental practices, and law offices. We increase lead volume, qualify prospects, automate follow-ups, boost bookings, and reduce staff workload — fully compliant with regulated industries.
+            Specialized AI for medical, dental, and law offices — more leads, smarter follow-ups, higher bookings, and less staff effort, fully compliant with industry rules.
           </p>
         </div>
 
@@ -184,65 +187,63 @@ const Features = () => {
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            {/* Receptionist */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <h4 className="text-xl font-bold text-card-foreground">Receptionist</h4>
+          {/* Receptionist */}
+          <div className="mb-12">
+            <div className="flex items-center gap-3 justify-center mb-8">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Phone className="w-6 h-6 text-primary" />
               </div>
-              <div className="space-y-6">
-                {receptionistServices.map((service) => (
-                  <Card key={service.title} className="border-border bg-card">
-                    <CardContent className="p-5">
-                      <div className="flex items-center gap-3 mb-3">
-                        <service.icon className="w-5 h-5 text-primary" />
-                        <h5 className="font-semibold text-card-foreground">{service.title}</h5>
-                      </div>
-                      <ul className="space-y-1 pl-8">
-                        {service.bullets.map((bullet, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="text-primary mt-1">•</span>
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <h4 className="text-xl font-bold text-card-foreground">Receptionist</h4>
             </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {receptionistServices.map((service) => (
+                <Card key={service.title} className="border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft bg-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <service.icon className="w-5 h-5 text-primary" />
+                      <h5 className="font-semibold text-card-foreground">{service.title}</h5>
+                    </div>
+                    <ul className="space-y-1">
+                      {service.bullets.map((bullet, i) => (
+                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
 
-            {/* Executive Assistant */}
-            <div>
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                  <ClipboardList className="w-6 h-6 text-accent" />
-                </div>
-                <h4 className="text-xl font-bold text-card-foreground">Executive Assistant</h4>
+          {/* Executive Assistant */}
+          <div>
+            <div className="flex items-center gap-3 justify-center mb-8">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
+                <ClipboardList className="w-6 h-6 text-accent" />
               </div>
-              <div className="space-y-6">
-                {assistantServices.map((service) => (
-                  <Card key={service.title} className="border-border bg-card">
-                    <CardContent className="p-5">
-                      <div className="flex items-center gap-3 mb-3">
-                        <service.icon className="w-5 h-5 text-accent" />
-                        <h5 className="font-semibold text-card-foreground">{service.title}</h5>
-                      </div>
-                      <ul className="space-y-1 pl-8">
-                        {service.bullets.map((bullet, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                            <span className="text-accent mt-1">•</span>
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <h4 className="text-xl font-bold text-card-foreground">Executive Assistant</h4>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {assistantServices.map((service) => (
+                <Card key={service.title} className="border-border hover:border-accent/30 transition-all duration-300 hover:shadow-soft bg-card">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <service.icon className="w-5 h-5 text-accent" />
+                      <h5 className="font-semibold text-card-foreground">{service.title}</h5>
+                    </div>
+                    <ul className="space-y-1">
+                      {service.bullets.map((bullet, i) => (
+                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <span className="text-accent mt-1">•</span>
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </div>

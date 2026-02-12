@@ -79,10 +79,10 @@ const CTA = () => {
   };
 
   const auditFeatures = [
-    "Front-desk performance audit",
     "Google & online visibility analysis",
-    "Appointment conversion review",
-    "Custom AI growth plan",
+    "Front desk & systems audit",
+    "Facebook Ads efficacy check",
+    "Custom AI roadmap",
   ];
 
   const trustBadges = [
@@ -109,15 +109,15 @@ const CTA = () => {
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Book AI Free Consultation
+              Book Free AI Consultation
             </h2>
 
             <p className="text-xl font-medium text-primary mb-6">
-              Discover How Many Patients & Clients You're Losing Right Now
+              Discuss opportunities for improvement
             </p>
 
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              In 3 minutes, see exactly where calls, bookings, and follow-ups are slipping through the cracks.
+              Receive at no charge:
             </p>
 
             {/* Audit Features */}
@@ -279,21 +279,15 @@ const CTA = () => {
             <h3 className="text-2xl font-bold mb-4">
               Ready to Grow Your Medical, Dental or Law Practice?
             </h3>
-            <p className="text-muted-foreground mb-8">
-              Every day without AI is another day patients and clients book with a faster competitor.
+            <p className="text-muted-foreground mb-4">
+              Live in days, not months
             </p>
-
-            <Button
-              onClick={() => {
-                const ctaForm = document.querySelector('#cta form');
-                if (ctaForm) {
-                  ctaForm.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="gradient-primary text-primary-foreground shadow-soft hover:opacity-90 transition-opacity h-12 px-8"
-            >
-              Book Now
-            </Button>
+            <p className="text-muted-foreground mb-4">
+              No long-term contracts
+            </p>
+            <p className="text-muted-foreground mb-8">
+              No obligation. No pressure. Keep the plan.
+            </p>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Megaphone, Bot, CalendarCheck, TrendingUp, ArrowRight } from "lucide-react";
+import { Megaphone, Bot, CalendarCheck, TrendingUp, Settings, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const steps = [
@@ -73,6 +73,25 @@ const steps = [
     color: "text-accent",
     bgColor: "bg-accent/10",
   },
+  {
+    number: "05",
+    icon: Settings,
+    title: "Office Process Automation",
+    subtitle: "Operations",
+    description: "AI automates back-office workflows so your team focuses on patients and clients.",
+    bullets: [
+      "Organizes and structures incoming data",
+      "Auto-fills forms, files, and profiles",
+      "Syncs data across systems (CRM, EHR, calendars)",
+      "Updates records in real time",
+    ],
+    metrics: [
+      { value: "40-60%", label: "reduction in admin labor costs" },
+      { value: "3-5×", label: "faster cycle times" },
+    ],
+    color: "text-coral",
+    bgColor: "bg-coral/10",
+  },
 ];
 
 const HowItWorks = () => {
@@ -90,7 +109,7 @@ const HowItWorks = () => {
             From Ad Click to <span className="text-gradient">Confirmed Appointment</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A Proven 4-Step Growth System
+            A Proven 5-Step Growth System
           </p>
         </div>
 
