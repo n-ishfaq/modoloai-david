@@ -36,11 +36,14 @@ const Hero = () => {
 
           {/* Main Heading */}
           <h1
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground animate-fade-in-up"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 text-foreground animate-fade-in-up"
             style={{ animationDelay: "0.1s" }}
           >
             Get More Patients & Clients
           </h1>
+
+          {/* Divider between H1 and H2 */}
+          <div className="w-24 h-px bg-border mx-auto mb-4 animate-fade-in-up" style={{ animationDelay: "0.12s" }} />
 
           {/* Subtitle - same font style as heading */}
           <h2

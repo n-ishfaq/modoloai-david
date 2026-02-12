@@ -107,11 +107,11 @@ const Features = () => {
               MODOLO AI Technology Solutions
             </span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
             MODOLO AI DRIVEN SOLUTIONS
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-6">
-            Demand Generation & AI Automation
+            Demand Generation And AI Office Automations
           </h3>
           <p className="text-lg text-muted-foreground">
             Specialized AI for medical, dental, and law offices — more leads, smarter follow-ups, higher bookings, and less staff effort, fully compliant with industry rules.
