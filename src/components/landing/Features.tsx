@@ -102,14 +102,13 @@ const Features = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary mb-4">
-            <span className="text-sm font-medium text-muted-foreground">
-              MODOLO AI DRIVEN SOLUTIONS
-            </span>
-          </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
-            Demand Generation And AI Office Automations
+          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-foreground">
+            MODOLO AI DRIVEN SOLUTIONS
           </h2>
+          <div className="w-24 h-px bg-foreground mx-auto mb-4" />
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
+            Demand Generation And AI Office Automations
+          </h3>
           <p className="text-lg text-muted-foreground">
             Specialized AI for medical, dental, and law offices — more leads, smarter follow-ups, higher bookings, and less staff effort, fully compliant with industry rules.
           </p>
