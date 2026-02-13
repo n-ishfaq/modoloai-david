@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: .
+    container_name: modolo-frontend
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.modolo.rule=Host(`modolo.ai`) || Host(`www.modolo.ai`)"
+      - "traefik.http.routers.modolo.entrypoints=websecure"
+      - "traefik.http.routers.modolo.tls=true"
+      - "traefik.http.routers.modolo.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.modolo.loadbalancer.server.port=80"
+    networks:
+      - root_default
+
+networks:
+  root_default:
+    external: true
