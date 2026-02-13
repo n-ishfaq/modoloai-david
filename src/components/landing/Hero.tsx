@@ -47,7 +47,7 @@ const Hero = () => {
 
           {/* Subtitle - same font style as heading */}
           <h2
-            className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-8 animate-fade-in-up"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-8 animate-fade-in-up"
             style={{ animationDelay: "0.15s" }}
           >
             Operate More Effectively With Less Staff
