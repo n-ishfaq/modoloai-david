@@ -6,10 +6,10 @@ const Footer = () => {
 
   const links = {
     solutions: [
-      { label: "AI Voice Receptionist", href: "#features" },
-      { label: "Calendar Management", href: "#features" },
-      { label: "Review Management", href: "#features" },
-      { label: "SEO & Advertising", href: "#features" },
+      { label: "Advertising", href: "#features" },
+      { label: "Marketing", href: "#features" },
+      { label: "Receptionist", href: "#features" },
+      { label: "Executive Assistant", href: "#features" },
     ],
     company: [
       { label: "About Us", href: "#" },
