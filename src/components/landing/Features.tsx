@@ -108,7 +108,7 @@ const Features = () => {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Demand Generation And AI Office Automations
+            Demand Generation & Office Automations
           </h2>
           <p className="text-lg text-muted-foreground">
             Specialized AI for medical, dental, and law offices — more leads, smarter follow-ups, higher bookings, and less staff effort, fully compliant with industry rules.
@@ -186,12 +186,7 @@ const Features = () => {
 
           {/* Receptionist */}
           <div className="mb-12">
-            <div className="flex items-center gap-3 justify-center mb-8">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Phone className="w-6 h-6 text-primary" />
-              </div>
-              <h4 className="text-xl font-bold text-card-foreground">Receptionist</h4>
-            </div>
+            <h4 className="text-xl font-bold text-card-foreground text-center mb-8">Receptionist</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {receptionistServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft bg-card">
@@ -216,12 +211,7 @@ const Features = () => {
 
           {/* Executive Assistant */}
           <div>
-            <div className="flex items-center gap-3 justify-center mb-8">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center">
-                <ClipboardList className="w-6 h-6 text-accent" />
-              </div>
-              <h4 className="text-xl font-bold text-card-foreground">Executive Assistant</h4>
-            </div>
+            <h4 className="text-xl font-bold text-card-foreground text-center mb-8">Executive Assistant</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {assistantServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-accent/30 transition-all duration-300 hover:shadow-soft bg-card">

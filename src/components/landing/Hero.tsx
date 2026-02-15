@@ -26,11 +26,11 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex flex-col items-center px-6 py-3 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
             <span className="text-sm font-medium text-foreground">
-              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice
+              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice
             </span>
             <div className="w-full h-px bg-border my-1.5" />
             <span className="text-sm font-medium text-foreground">
-              <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice | AI
+              AI
             </span>
           </div>
 
@@ -58,7 +58,7 @@ const Hero = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Every day without AI, competitors book your clients while your team struggles with repetitive tasks that could be automated.
+            Every day without AI, competitors win clients while your team loses time to repetitive work.
           </p>
           <p
             className="text-lg md:text-xl font-semibold text-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up"
