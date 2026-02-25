@@ -120,7 +120,7 @@ const Features = () => {
 
           {/* Advertising */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold text-center mb-8 text-muted-foreground">Advertising</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Advertising</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {advertisingServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-accent/30 transition-all duration-300 hover:shadow-soft bg-card">
@@ -146,7 +146,7 @@ const Features = () => {
 
           {/* Marketing */}
           <div>
-            <h4 className="text-xl font-bold text-center mb-8 text-muted-foreground">Marketing</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Marketing</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {marketingServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft bg-card">

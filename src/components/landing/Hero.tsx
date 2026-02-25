@@ -25,8 +25,8 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex flex-col items-center px-6 py-3 rounded-full bg-card border border-border shadow-sm mb-8 animate-fade-in">
-            <span className="text-sm font-medium text-foreground">
-              <span className="font-bold text-primary">M</span>edical <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">D</span>ental <span className="font-bold text-primary">O</span>ffice | <span className="font-bold text-primary">L</span>aw <span className="font-bold text-primary">O</span>ffice
+            <span className="text-sm font-medium text-primary">
+              <span className="font-bold text-foreground">M</span>edical <span className="font-bold text-foreground">O</span>ffice | <span className="font-bold text-foreground">D</span>ental <span className="font-bold text-foreground">O</span>ffice | <span className="font-bold text-foreground">L</span>aw <span className="font-bold text-foreground">O</span>ffice
             </span>
             <div className="w-full h-px bg-border my-1.5" />
             <span className="text-sm font-medium text-foreground">
