@@ -43,7 +43,7 @@ const CTA = () => {
     }
 
     try {
-      const response = await fetch("https://n8n.srv942069.hstgr.cloud/webhook/082b648b-0108-4b64-8172-ad2ceb309ece", {
+      const response = await fetch("https://n8n.modolo.ai/webhook/082b648b-0108-4b64-8172-ad2ceb309ece", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const CTA = () => {
     } catch (error) {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us directly.",
+        description: "Please try again or email us directly at david.golub@modolo.ai",
         variant: "destructive",
       });
     }
@@ -255,7 +255,7 @@ const CTA = () => {
           )}
 
           <p className="text-sm text-muted-foreground text-center mb-8">
-            No obligation. No pressure. Keep the plan.
+            No obligation. No pressure.
           </p>
 
           {/* Trust badges */}
