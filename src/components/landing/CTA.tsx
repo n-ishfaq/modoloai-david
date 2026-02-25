@@ -273,21 +273,7 @@ const CTA = () => {
             ))}
           </div>
 
-          {/* Secondary CTA */}
-          <div className="text-center pt-12 border-t border-border">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Grow Your Medical, Dental or Law Practice?
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              Live in days, not months
-            </p>
-            <p className="text-muted-foreground mb-4">
-              No long-term contracts
-            </p>
-            <p className="text-muted-foreground mb-8">
-              No obligation. No pressure. Keep the plan.
-            </p>
-          </div>
+          {/* Secondary CTA - removed */}
         </div>
       </div>
     </section>
