@@ -61,19 +61,19 @@ const receptionistServices = [
     icon: Info,
     title: "Provides Information",
     description: "Share key details with patients and clients instantly.",
-    bullets: ["Services & pricing details", "Insurance & coverage guidance", "Office hours & locations", "Treatment / case process explanation"],
+    bullets: ["Services & pricing details", "Insurance & coverage guidance", "Office hours & locations"],
   },
   {
     icon: Users,
     title: "Collects Information",
     description: "Gather essential intake data before visits.",
-    bullets: ["New patient & client details", "Contact information", "Insurance data", "Case / visit reason"],
+    bullets: ["New patient & client details", "Contact information", "Insurance data"],
   },
   {
     icon: HelpCircle,
     title: "Answers Questions",
     description: "Handle common inquiries around the clock.",
-    bullets: ["Common patient & client inquiries", "Appointment availability", "Preparation instructions", "Follow-up questions"],
+    bullets: ["Common patient & client inquiries", "Appointment availability", "Preparation instructions"],
   },
 ];
 
@@ -82,19 +82,19 @@ const assistantServices = [
     icon: FileText,
     title: "Fills Out Forms",
     description: "Automate paperwork and data entry.",
-    bullets: ["Intake forms", "Patient & client profiles", "CRM updates", "Case documentation"],
+    bullets: ["Intake forms", "Patient & client profiles", "CRM updates"],
   },
   {
     icon: Calendar,
     title: "Books Appointment",
     description: "Schedule and manage appointments automatically.",
-    bullets: ["Real-time scheduling", "Calendar syncing", "Reschedules & cancellations", "Confirmation messages"],
+    bullets: ["Real-time scheduling", "Calendar syncing", "Reschedules & cancellations"],
   },
   {
     icon: MessageSquare,
     title: "Conducts Follow-Ups",
     description: "Keep patients and clients engaged after visits.",
-    bullets: ["SMS & email reminders", "No-show recovery", "Lead nurturing", "Post-visit check-ins"],
+    bullets: ["SMS & email reminders", "No-show recovery", "Lead nurturing"],
   },
 ];
 
