@@ -40,10 +40,10 @@ const Footer = () => {
               <img src={modoloLogo} alt="MODOLO AI Logo" className="h-24 md:h-30 w-auto" />
             </div>
             <p className="text-muted-foreground mb-2 max-w-xs">
-              Medical, Dental & Law Office AI Solutions
+              Medical, Dental & Law Office AI Driven Solution
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Demand Generation & AI Office Operations
+              Demand Generation & Office Automations
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -117,7 +117,7 @@ const Footer = () => {
             © {currentYear} MODOLO.AI All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground">
-            Medical, Dental & Law Office AI Solutions | www.aifordp.com
+            Medical, Dental & Law Office AI Driven Solution | www.modolo.ai
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { CheckCircle, Search, Phone } from "lucide-react";
+import { CheckCircle, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const CTA = () => {
@@ -43,7 +43,7 @@ const CTA = () => {
     }
 
     try {
-      const response = await fetch("https://n8n.srv942069.hstgr.cloud/webhook/082b648b-0108-4b64-8172-ad2ceb309ece", {
+      const response = await fetch("https://n8n.modolo.ai/webhook/082b648b-0108-4b64-8172-ad2ceb309ece", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const CTA = () => {
     } catch (error) {
       toast({
         title: "Something went wrong",
-        description: "Please try again or call us directly.",
+        description: "Please try again or email us directly at david.golub@modolo.ai",
         variant: "destructive",
       });
     }
@@ -133,11 +133,6 @@ const CTA = () => {
           {/* A2P Contact Form */}
           {!isSubmitted ? (
             <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mb-8 p-8 bg-card rounded-2xl border border-border shadow-soft">
-              <div className="flex items-center justify-center gap-2 mb-6">
-                <Phone className="w-5 h-5 text-primary" />
-                <span className="text-lg font-semibold text-foreground">(888) 487-2171</span>
-              </div>
-
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <Label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name *</Label>
@@ -260,7 +255,7 @@ const CTA = () => {
           )}
 
           <p className="text-sm text-muted-foreground text-center mb-8">
-            No obligation. No pressure. Keep the plan.
+            No obligation. No pressure.
           </p>
 
           {/* Trust badges */}
@@ -273,21 +268,7 @@ const CTA = () => {
             ))}
           </div>
 
-          {/* Secondary CTA */}
-          <div className="text-center pt-12 border-t border-border">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to Grow Your Medical, Dental or Law Practice?
-            </h3>
-            <p className="text-muted-foreground mb-4">
-              Live in days, not months
-            </p>
-            <p className="text-muted-foreground mb-4">
-              No long-term contracts
-            </p>
-            <p className="text-muted-foreground mb-8">
-              No obligation. No pressure. Keep the plan.
-            </p>
-          </div>
+          {/* Secondary CTA - removed */}
         </div>
       </div>
     </section>

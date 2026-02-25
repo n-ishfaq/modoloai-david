@@ -1,8 +1,4 @@
 import { 
-  Phone, 
-  ClipboardList, 
-  Megaphone,
-  Star, 
   Search, 
   TrendingUp,
   Tv,
@@ -14,7 +10,7 @@ import {
   MessageSquare,
   Info,
   HelpCircle,
-  Users
+  Users,
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -64,17 +60,20 @@ const receptionistServices = [
   {
     icon: Info,
     title: "Provides Information",
-    bullets: ["Services & pricing details", "Insurance & coverage guidance", "Office hours & locations", "Treatment / case process explanation"],
+    description: "Share key details with patients and clients instantly.",
+    bullets: ["Services & pricing details", "Insurance & coverage guidance", "Office hours & locations"],
   },
   {
     icon: Users,
     title: "Collects Information",
-    bullets: ["New patient & client details", "Contact information", "Insurance data", "Case / visit reason"],
+    description: "Gather essential intake data before visits.",
+    bullets: ["New patient & client details", "Contact information", "Insurance data"],
   },
   {
     icon: HelpCircle,
     title: "Answers Questions",
-    bullets: ["Common patient & client inquiries", "Appointment availability", "Preparation instructions", "Follow-up questions"],
+    description: "Handle common inquiries around the clock.",
+    bullets: ["Common patient & client inquiries", "Appointment availability", "Preparation instructions"],
   },
 ];
 
@@ -82,17 +81,20 @@ const assistantServices = [
   {
     icon: FileText,
     title: "Fills Out Forms",
-    bullets: ["Intake forms", "Patient & client profiles", "CRM updates", "Case documentation"],
+    description: "Automate paperwork and data entry.",
+    bullets: ["Intake forms", "Patient & client profiles", "CRM updates"],
   },
   {
     icon: Calendar,
     title: "Books Appointment",
-    bullets: ["Real-time scheduling", "Calendar syncing", "Reschedules & cancellations", "Confirmation messages"],
+    description: "Schedule and manage appointments automatically.",
+    bullets: ["Real-time scheduling", "Calendar syncing", "Reschedules & cancellations"],
   },
   {
     icon: MessageSquare,
     title: "Conducts Follow-Ups",
-    bullets: ["SMS & email reminders", "No-show recovery", "Lead nurturing", "Post-visit check-ins"],
+    description: "Keep patients and clients engaged after visits.",
+    bullets: ["SMS & email reminders", "No-show recovery", "Lead nurturing"],
   },
 ];
 
@@ -125,7 +127,7 @@ const Features = () => {
 
           {/* Advertising */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold text-center mb-8 text-muted-foreground">Advertising</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Advertising</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {advertisingServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-accent/30 transition-all duration-300 hover:shadow-soft bg-card">
@@ -151,7 +153,7 @@ const Features = () => {
 
           {/* Marketing */}
           <div>
-            <h4 className="text-xl font-bold text-center mb-8 text-muted-foreground">Marketing</h4>
+            <h4 className="text-xl font-bold text-center mb-8 text-foreground">Marketing</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {marketingServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft bg-card">
@@ -186,18 +188,19 @@ const Features = () => {
 
           {/* Receptionist */}
           <div className="mb-12">
-            <h4 className="text-xl font-bold text-card-foreground text-center mb-8">Receptionist</h4>
+            <h4 className="text-xl font-bold text-foreground text-center mb-8">Receptionist</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {receptionistServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-primary/30 transition-all duration-300 hover:shadow-soft bg-card">
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <service.icon className="w-5 h-5 text-primary" />
-                      <h5 className="font-semibold text-card-foreground">{service.title}</h5>
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <service.icon className="w-6 h-6 text-primary" />
                     </div>
+                    <h5 className="text-lg font-bold mb-2 text-card-foreground">{service.title}</h5>
+                    <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
                     <ul className="space-y-1">
                       {service.bullets.map((bullet, i) => (
-                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
                           <span className="text-primary mt-1">•</span>
                           {bullet}
                         </li>
@@ -211,18 +214,19 @@ const Features = () => {
 
           {/* Executive Assistant */}
           <div>
-            <h4 className="text-xl font-bold text-card-foreground text-center mb-8">Executive Assistant</h4>
+            <h4 className="text-xl font-bold text-foreground text-center mb-8">Executive Assistant</h4>
             <div className="grid md:grid-cols-3 gap-6">
               {assistantServices.map((service) => (
                 <Card key={service.title} className="border-border hover:border-accent/30 transition-all duration-300 hover:shadow-soft bg-card">
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-3 mb-3">
-                      <service.icon className="w-5 h-5 text-accent" />
-                      <h5 className="font-semibold text-card-foreground">{service.title}</h5>
+                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center mb-4">
+                      <service.icon className="w-6 h-6 text-accent" />
                     </div>
+                    <h5 className="text-lg font-bold mb-2 text-card-foreground">{service.title}</h5>
+                    <p className="text-sm text-muted-foreground mb-4">{service.description}</p>
                     <ul className="space-y-1">
                       {service.bullets.map((bullet, i) => (
-                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
                           <span className="text-accent mt-1">•</span>
                           {bullet}
                         </li>
