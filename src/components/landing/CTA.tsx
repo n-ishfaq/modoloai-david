@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { CheckCircle, Search, Phone } from "lucide-react";
+import { CheckCircle, Search } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const CTA = () => {
@@ -133,11 +133,6 @@ const CTA = () => {
           {/* A2P Contact Form */}
           {!isSubmitted ? (
             <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mb-8 p-8 bg-card rounded-2xl border border-border shadow-soft">
-              <div className="flex items-center justify-center gap-2 mb-6">
-                <Phone className="w-5 h-5 text-primary" />
-                <span className="text-lg font-semibold text-foreground">(888) 487-2171</span>
-              </div>
-
               <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
                   <Label htmlFor="firstName" className="text-sm font-medium text-foreground">First Name *</Label>
